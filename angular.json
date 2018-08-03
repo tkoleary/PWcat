@@ -19,13 +19,15 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
+              "src/assets",
               "src/favicon.ico",
-              "src/assets"
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true
           },
           "configurations": {
             "production": {
@@ -50,7 +52,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PWCat:build"
+            "browserTarget": "PWCat:build",
           },
           "configurations": {
             "production": {
@@ -75,10 +77,6 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
           }
         },
         "lint": {
