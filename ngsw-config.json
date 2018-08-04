@@ -8,20 +8,25 @@
         "/favicon.ico",
         "/index.html"
       ],
-      "versionedFiles": [
+      "files": [
         "/*.bundle.css",
         "/*.bundle.js",
         "/*.chunk.js"
       ]
     }
-  }, {
+  }, 
+  {
     "name": "assets",
     "installMode": "lazy",
     "updateMode": "prefetch",
     "resources": {
       "files": [
         "/assets/**"
-      ]
-    }
-  }]
+        ],
+        "urls": [
+          "https://cataas.com/**"
+        ]
+      }
+    }]
+  }
 }
