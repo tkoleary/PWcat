@@ -26,18 +26,25 @@ export class ImgCardComponent implements OnInit {
     fontsize: 40
   };
 
+  public src: string;
+
   public button: Button = {
     text: 'Give me another cat',
     color: 'primary',
     disabled: false
   };
 
+  generateSrc(): void {
+    this.src = this.image.api + this.image.message +
+      '?size=' + this.image.fontsize;
+  }
+
   ngOnInit() {
-  this.src = this.image.api + this.image.message + 
-    '?size=' + this.image.fontsize;
-  if (!navigator.onLine) {
-    this.button.text = 'Sorry, you\'re offline';
-    this.button.disabled = true;
+    this.src = this.image.api + this.image.message + 
+      '?size=' + this.image.fontsize;
+    if (!navigator.onLine) {
+      this.button.text = 'Sorry, you\'re offline';
+      this.button.disabled = true;
     }
   }
 }
