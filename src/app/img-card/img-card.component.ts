@@ -23,7 +23,7 @@ export class ImgCardComponent implements OnInit {
   private image: CatImage = {
     message: 'Progressive Web Cat',
     api: 'https://cataas.com/cat/says/',
-    fontsize: 40,
+    fontsize: 40
   };
 
   public button: Button = {
@@ -38,5 +38,6 @@ export class ImgCardComponent implements OnInit {
   if (!navigator.onLine) {
     this.button.text = 'Sorry, you\'re offline';
     this.button.disabled = true;
+    }
   }
 }
