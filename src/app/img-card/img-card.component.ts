@@ -6,6 +6,12 @@ class CatImage {
   fontsize: number;
 }
 
+class Button { 
+  text: string;
+  disabled: boolean;
+  color: string;
+}
+
 @Component({
   selector: 'app-img-card',
   templateUrl: './img-card.component.html',
@@ -20,15 +26,17 @@ export class ImgCardComponent implements OnInit {
     fontsize: 40,
   };
 
-  public src: string;
+  public button: Button = {
+    text: 'Give me another cat',
+    color: 'primary',
+    disabled: false
+  };
 
   ngOnInit() {
-    this.generateSrc();
-  }
-
-  public generateSrc(): void {
   this.src = this.image.api + this.image.message + 
-    '?size=' + this.image.fontsize +
-    '&ts=' + Date.now();
+    '?size=' + this.image.fontsize;
+  if (!navigator.onLine) {
+    this.button.text = 'Sorry, you\'re offline';
+    this.button.disabled = true;
   }
 }
