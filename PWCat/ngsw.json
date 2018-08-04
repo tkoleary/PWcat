@@ -1,14 +1,14 @@
 {
   "configVersion": 1,
-  "index": "/PWCat/index.html",
+  "index": "https://tkoleary.github.io/PWcat/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/PWCat/favicon.ico",
-        "/PWCat/index.html"
+        "https://tkoleary.github.io/PWcat/favicon.ico",
+        "https://tkoleary.github.io/PWcat/index.html"
       ],
       "patterns": []
     },
@@ -22,8 +22,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/PWCat/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/PWCat/index.html": "122da4f1c9d12158d2f940f86dc1d72e0aa6a4a7"
+    "https://tkoleary.github.io/PWcat/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://tkoleary.github.io/PWcat/index.html": "967855ac4117ef993527a6c9598cf5a0d85b0d3e"
   },
   "navigationUrls": [
     {
